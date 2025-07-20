@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+<form method="post" style="padding: 20px;">
+    <input type="hidden" id="placeId">
+    <input type="hidden" id="placeCityId">
+
+    <div class="form-group">
+        <label>Name:</label>
+        <input type="text" class="form-control" id="placeName">
+    </div>
+
+    <div class="form-group">
+        <label>Description:</label>
+        <textarea type="text" class="form-control" id="placeDescription"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Type:</label>
+        <select class="form-control" id="placeType">
+            <option value="Restaurace">Restaurace</option>
+            <option value="Památka">Památka</option>
+            <option value="Zajímavost">Zajímavost</option>
+            <option value="Ostatní">Ostatní</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Address:</label>
+        <input type="text" class="form-control" id="placeAddr">
+    </div>
+
+    <div class="form-group">
+        <label>Picture:</label>
+        <input type="text" class="form-control" id="placePicture">
+    </div>
+    <button class="btn btn-success" id="placeConfirm">Confirm</button>
+
+    <script src="addPlace.js"></script>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+content, places
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding-inline: 50px;
+    gap: 15px;
+}
+
+background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 24%;
+    border: 1px solid black;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+content background {
+    display: flex;
+    flex:1 0 24%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+}
+
+button{
+    margin-block: 10px!important;
+}
+reviews{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+content background:hover {
+    cursor: pointer;
+    border: 1px solid blue;
+}
+content div:hover{
+    background-color: rgba(0, 0, 0, 0.40)!important;
+}
+
+places background {
+    display: flex;
+    flex:1 0 24%;
+    height: 240px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 24%;
+    border: 1px solid black;
+    color: white;
+    font-size: 25px;
+}
+
+places background:hover {
+    cursor: pointer;
+    border: 1px solid blue;
+}
+
+places div:hover {
+    background-color: rgba(0, 0, 0, 0.40)!important;
+}
+
+info background {
+    display: flex;
+    min-width: 100%;
+    max-height: 30vh;
+    border: 1px solid black;
+    color: white;
+    font-size: 25px;
+}
+
+
+#placeOverview {
+    padding: 20px;
+}
+
+info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 5fr;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+newReview input,textarea{
+    width: 100%;
+}
+
+newReview textarea{
+    max-height: 30vh;
+    height: fit-content;
+    resize: none;
+}
+
+reviews {
+    max-height: 40%;
+    overflow: scroll;
+}
+
+reviews review{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border-bottom: 2px solid black;
+    word-wrap: break-word;
+}
+.stars{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars input:checked ~ label {
+    color: black;
+}
+
+.stars label{
+    width: 40px;
+    font-size: 40px;
+    color: yellow;
+}
+
+review div{
+    border-bottom: none;
+}
