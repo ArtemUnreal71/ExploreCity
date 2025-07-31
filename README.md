@@ -17,7 +17,7 @@ Tento projekt byl **shrnutím celoroční výuky tvorby webových aplikací**. K
   - Pokud město neexistuje: použije se `POST`
 - **Databázová vrstva** – využívá repozitáře v NestJS pro přístup k datům
 
-> Tento projekt jsem také použil u praktické maturitní zkoušky – první den zaměřené na NestJS, druhý den na SQL (mirroring a zálohování).
+> Podobnou úlohu jsem měl u praktické maturitní zkoušky – první den zaměřené na NestJS, druhý den na SQL (mirroring a zálohování).
 
 ## Technologie
 
